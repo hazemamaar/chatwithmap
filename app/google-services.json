@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1064732796148",
+    "project_id": "smd-for-emergency-response",
+    "storage_bucket": "smd-for-emergency-response.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064732796148:android:eec56e1551c449a4f96aa1",
+        "android_client_info": {
+          "package_name": "com.example.tracking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFhSms-L7ekT658spvEqtZUQYsVb6D0Jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

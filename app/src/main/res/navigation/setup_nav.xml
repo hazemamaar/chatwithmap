@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setup_nav"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.tracking.ui.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_appActivity"
+            app:destination="@id/appActivity" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_userActivity"
+            app:destination="@id/userActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.tracking.ui.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.tracking.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_appActivity"
+            app:destination="@id/appActivity" />
+        <action
+            android:id="@+id/action_loginFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userActivity"
+            app:destination="@id/userActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/appActivity"
+        android:name="com.example.tracking.AppActivity"
+        android:label="AppActivity" />
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.example.tracking.ui.FormFragment"
+        android:label="FormFragment" >
+        <action
+            android:id="@+id/action_formFragment_to_userActivity"
+            app:destination="@id/userActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/userActivity"
+        android:name="com.example.tracking.ui.user.UserActivity"
+        android:label="activity_user"
+        tools:layout="@layout/activity_user" />
+</navigation>

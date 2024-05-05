@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_graph"
+    app:startDestination="@id/homeUserFragment">
+
+    <fragment
+        android:id="@+id/chatFragment2"
+        android:name="com.example.tracking.ui.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment2_to_messageActivity2"
+            app:destination="@id/messageActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeUserFragment"
+        android:name="com.example.tracking.ui.user.HomeUserFragment"
+        android:label="fragment_home_user"
+        tools:layout="@layout/fragment_home_user" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.tracking.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_mainActivity2"
+            app:destination="@id/mainActivity"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment2"
+        android:name="com.example.tracking.ui.user.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <activity
+        android:id="@+id/messageActivity2"
+        android:name="com.example.tracking.ui.MessageActivity2"
+        android:label="activity_message2"
+        tools:layout="@layout/activity_message2" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.tracking.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
